@@ -1,0 +1,477 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Store Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+
+  <!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="{% static 'css/animate.css' %}">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="{% static 'css/icomoon.css' %}">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="{% static 'css/flexslider.css' %}">
+
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+
+	<!-- Date Picker -->
+	<link rel="stylesheet" href="{% static 'css/bootstrap-datepicker.css' %}">
+	<!-- Flaticons  -->
+	<link rel="stylesheet" href="{% static 'fonts/flaticon/font/flaticon.css' %}">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+	<!-- Modernizr JS -->
+	<script src="{% static 'js/modernizr-2.6.2.min.js' %}"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="{% static 'js/respond.min.js' %}"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+
+	<div class="colorlib-loader"></div>
+
+	<div id="page">
+		<nav class="colorlib-nav" role="navigation">
+			<div class="top-menu">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-2">
+							<div id="colorlib-logo"><a href="/">Zebraa</a></div>
+						</div>
+						<div class="col-xs-10 text-right menu-1">
+							<ul>
+								<li class="active"><a href="/">Home</a></li>
+								<li class="has-dropdown">
+									<a href="#">Shop</a>
+									<ul class="dropdown">
+										<li><a href="{% url 'product_list' %}">Product List</a></li>
+										<li><a href="#">Shipping Cart</a></li>
+										<li><a href="#">Checkout</a></li>
+										<li><a href="#">Order Complete</a></li>
+										<li><a href="#">Wishlist</a></li>
+									</ul>
+								</li>
+								<li><a href="{% url 'about' %}">About</a></li>
+								<li><a href="{% url 'contact-us' %}">Contact</a></li>
+                                <li><a href="#" data-target="#cart"><i class="icon-shopping-cart"></i>
+                                    Cart [<span class="total-count"></span>]</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+        {% block contents %}{% endblock %}
+
+		<div id="colorlib-subscribe">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2">
+						<div class="col-md-6 text-center">
+							<h2><i class="icon-paperplane"></i>Sign Up for a Newsletter</h2>
+						</div>
+						<div class="col-md-6">
+							<form class="form-inline qbstp-header-subscribe">
+								<div class="row">
+									<div class="col-md-12 col-md-offset-0">
+										<div class="form-group">
+											<input type="text" class="form-control" id="email" placeholder="Enter your email">
+											<button type="submit" class="btn btn-primary">Subscribe</button>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer id="colorlib-footer" role="contentinfo">
+			<div class="container">
+				<div class="row row-pb-md">
+					<div class="col-md-3 colorlib-widget">
+						<h4>About Store</h4>
+						<p>Zebraa is a lifestyle products online platform. We sell socially and ethically conscious products in a virtual or real environment. By purchasing these products from the producers, the social good flows-down the logistics chain to the beneficiaries.</p>
+						<p>
+							<ul class="colorlib-social-icons">
+								<li><a href="#"><i class="icon-twitter"></i></a></li>
+								<li><a href="https://www.facebook.com/zebraalife/"><i class="icon-facebook"></i></a></li>
+								<li><a href="#"><i class="icon-linkedin"></i></a></li>
+								<li><a href="#"><i class="icon-dribbble"></i></a></li>
+							</ul>
+						</p>
+					</div>
+					<div class="col-md-2 colorlib-widget">
+						<h4>Customer Care</h4>
+						<p>
+							<ul class="colorlib-footer-links">
+								<li><a href="#">Contact</a></li>
+								<li><a href="#">Returns/Exchange</a></li>
+								<li><a href="#">Gift Voucher</a></li>
+								<li><a href="#">Wishlist</a></li>
+								<li><a href="#">Special</a></li>
+								<li><a href="#">Customer Services</a></li>
+								<li><a href="#">Site maps</a></li>
+							</ul>
+						</p>
+					</div>
+					<div class="col-md-2 colorlib-widget">
+						<h4>Information</h4>
+						<p>
+							<ul class="colorlib-footer-links">
+								<li><a href="#">About us</a></li>
+								<li><a href="#">Delivery Information</a></li>
+								<li><a href="#">Privacy Policy</a></li>
+								<li><a href="#">Support</a></li>
+								<li><a href="#">Order Tracking</a></li>
+							</ul>
+						</p>
+					</div>
+
+					<div class="col-md-2">
+						<h4>News</h4>
+						<ul class="colorlib-footer-links">
+							<li><a href="blog.html">Blog</a></li>
+							<li><a href="#">Press</a></li>
+							<li><a href="#">Exhibitions</a></li>
+						</ul>
+					</div>
+
+					<div class="col-md-3">
+						<h4>Contact Information</h4>
+						<ul class="colorlib-footer-links">
+							<li>8/1 Lalmatia,<br>Dhaka, Bangladesh</li>
+							<li><a href="tel://1234567920">+880 1535 405817</a></li>
+							<li><a href="mailto:info@yoursite.com">info@yoursite.com</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="copy">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<p>
+
+							<span class="block"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | ZebraaLife Corporation LTD.
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up2"></i></a>
+	</div>
+
+	<!-- jQuery -->
+	<script src="{% static 'js/jquery.min.js' %}"></script>
+	<!-- jQuery Easing -->
+	<script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+	<!-- Bootstrap -->
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+	<!-- Waypoints -->
+	<script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+	<!-- Flexslider -->
+	<script src="{% static 'js/jquery.flexslider-min.js' %}"></script>
+	<!-- Owl carousel -->
+	<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+	<!-- Magnific Popup -->
+	<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+	<script src="{% static 'js/magnific-popup-options.js' %}"></script>
+	<!-- Date Picker -->
+	<script src="{% static 'js/bootstrap-datepicker.js' %}"></script>
+	<!-- Stellar Parallax -->
+	<script src="{% static 'js/jquery.stellar.min.js' %}"></script>
+	<!-- Main -->
+	<script src="{% static 'js/main.js' %}"></script>
+    <!-- Google Map -->
+
+
+    	<script>
+		$(document).ready(function(){
+
+		var quantitiy=0;
+		   $('.quantity-right-plus').click(function(e){
+
+		        // Stop acting like a button
+		        e.preventDefault();
+		        // Get the field name
+		        var quantity = parseInt($('#quantity').val());
+
+		        // If is not undefined
+
+		            $('#quantity').val(quantity + 1);
+
+
+		            // Increment
+
+		    });
+
+		     $('.quantity-left-minus').click(function(e){
+		        // Stop acting like a button
+		        e.preventDefault();
+		        // Get the field name
+		        var quantity = parseInt($('#quantity').val());
+
+		        // If is not undefined
+
+		            // Increment
+		            if(quantity>0){
+		            $('#quantity').val(quantity - 1);
+		            }
+		    });
+
+		});
+	</script>
+{##}
+{#    <script>#}
+{#        // ************************************************#}
+{#        // Shopping Cart API#}
+{#        // ************************************************#}
+{##}
+{#        var shoppingCart = (function() {#}
+{#          // =============================#}
+{#          // Private methods and propeties#}
+{#          // =============================#}
+{#          cart = [];#}
+{##}
+{#          // Constructor#}
+{#          function Item(name, price, count) {#}
+{#            this.name = name;#}
+{#            this.price = price;#}
+{#            this.count = count;#}
+{#          }#}
+{##}
+{#          // Save cart#}
+{#          function saveCart() {#}
+{#            sessionStorage.setItem('shoppingCart', JSON.stringify(cart));#}
+{#          }#}
+{##}
+{#            // Load cart#}
+{#          function loadCart() {#}
+{#            cart = JSON.parse(sessionStorage.getItem('shoppingCart'));#}
+{#          }#}
+{#          if (sessionStorage.getItem("shoppingCart") != null) {#}
+{#            loadCart();#}
+{#          }#}
+{##}
+{##}
+{#          // =============================#}
+{#          // Public methods and propeties#}
+{#          // =============================#}
+{#          var obj = {};#}
+{##}
+{#          // Add to cart#}
+{#          obj.addItemToCart = function(name, price, count) {#}
+{#            for(var item in cart) {#}
+{#              if(cart[item].name === name) {#}
+{#                cart[item].count ++;#}
+{#                saveCart();#}
+{#                return;#}
+{#              }#}
+{#            }#}
+{#            var item = new Item(name, price, count);#}
+{#            cart.push(item);#}
+{#            saveCart();#}
+{#          }#}
+{#          // Set count from item#}
+{#          obj.setCountForItem = function(name, count) {#}
+{#            for(var i in cart) {#}
+{#              if (cart[i].name === name) {#}
+{#                cart[i].count = count;#}
+{#                break;#}
+{#              }#}
+{#            }#}
+{#          };#}
+{#          // Remove item from cart#}
+{#          obj.removeItemFromCart = function(name) {#}
+{#              for(var item in cart) {#}
+{#                if(cart[item].name === name) {#}
+{#                  cart[item].count --;#}
+{#                  if(cart[item].count === 0) {#}
+{#                    cart.splice(item, 1);#}
+{#                  }#}
+{#                  break;#}
+{#                }#}
+{#            }#}
+{#            saveCart();#}
+{#          }#}
+{##}
+{#          // Remove all items from cart#}
+{#          obj.removeItemFromCartAll = function(name) {#}
+{#            for(var item in cart) {#}
+{#              if(cart[item].name === name) {#}
+{#                cart.splice(item, 1);#}
+{#                break;#}
+{#              }#}
+{#            }#}
+{#            saveCart();#}
+{#          }#}
+{##}
+{#          // Clear cart#}
+{#          obj.clearCart = function() {#}
+{#            cart = [];#}
+{#            saveCart();#}
+{#          }#}
+{##}
+{#          // Count cart#}
+{#          obj.totalCount = function() {#}
+{#            var totalCount = 0;#}
+{#            for(var item in cart) {#}
+{#              totalCount += cart[item].count;#}
+{#            }#}
+{#            return totalCount;#}
+{#          }#}
+{##}
+{#          // Total cart#}
+{#          obj.totalCart = function() {#}
+{#            var totalCart = 0;#}
+{#            for(var item in cart) {#}
+{#              totalCart += cart[item].price * cart[item].count;#}
+{#            }#}
+{#            return Number(totalCart.toFixed(2));#}
+{#          }#}
+{##}
+{#          // List cart#}
+{#          obj.listCart = function() {#}
+{#            var cartCopy = [];#}
+{#            for(i in cart) {#}
+{#              item = cart[i];#}
+{#              itemCopy = {};#}
+{#              for(p in item) {#}
+{#                itemCopy[p] = item[p];#}
+{##}
+{#              }#}
+{#              itemCopy.total = Number(item.price * item.count).toFixed(2);#}
+{#              cartCopy.push(itemCopy)#}
+{#            }#}
+{#            return cartCopy;#}
+{#          }#}
+{##}
+{#          // cart : Array#}
+{#          // Item : Object/Class#}
+{#          // addItemToCart : Function#}
+{#          // removeItemFromCart : Function#}
+{#          // removeItemFromCartAll : Function#}
+{#          // clearCart : Function#}
+{#          // countCart : Function#}
+{#          // totalCart : Function#}
+{#          // listCart : Function#}
+{#          // saveCart : Function#}
+{#          // loadCart : Function#}
+{#          return obj;#}
+{#        })();#}
+{##}
+{##}
+{#        // *****************************************#}
+{#        // Triggers / Events#}
+{#        // *****************************************#}
+{#        // Add item#}
+{#        $('.add-to-cart').click(function(event) {#}
+{#          event.preventDefault();#}
+{#          var name = $(this).data('name');#}
+{#          var price = Number($(this).data('price'));#}
+{#          shoppingCart.addItemToCart(name, price, 1);#}
+{#          displayCart();#}
+{#        });#}
+{##}
+{#        // Clear items#}
+{#        $('.clear-cart').click(function() {#}
+{#          shoppingCart.clearCart();#}
+{#          displayCart();#}
+{#        });#}
+{##}
+{##}
+{#        function displayCart() {#}
+{#          var cartArray = shoppingCart.listCart();#}
+{#          var output = "";#}
+{#          for(var i in cartArray) {#}
+{#            output += "<tr>"#}
+{#              + "<td>" + cartArray[i].name + "</td>"#}
+{#              + "<td>(" + cartArray[i].price + ")</td>"#}
+{#              + "<td><div class='input-group'><button class='minus-item input-group-addon btn btn-primary' data-name=" + cartArray[i].name + ">-</button>"#}
+{#              + "<input type='number' class='item-count form-control' data-name='" + cartArray[i].name + "' value='" + cartArray[i].count + "'>"#}
+{#              + "<button class='plus-item btn btn-primary input-group-addon' data-name=" + cartArray[i].name + ">+</button></div></td>"#}
+{#              + "<td><button class='delete-item btn btn-danger' data-name=" + cartArray[i].name + ">X</button></td>"#}
+{#              + " = "#}
+{#              + "<td>" + cartArray[i].total + "</td>"#}
+{#              +  "</tr>";#}
+{#          }#}
+{#          $('.show-cart').html(output);#}
+{#          $('.total-cart').html(shoppingCart.totalCart());#}
+{#          $('.total-count').html(shoppingCart.totalCount());#}
+{#        }#}
+{##}
+{#        // Delete item button#}
+{##}
+{#        $('.show-cart').on("click", ".delete-item", function(event) {#}
+{#          var name = $(this).data('name')#}
+{#          shoppingCart.removeItemFromCartAll(name);#}
+{#          displayCart();#}
+{#        })#}
+{##}
+{##}
+{#        // -1#}
+{#        $('.show-cart').on("click", ".minus-item", function(event) {#}
+{#          var name = $(this).data('name')#}
+{#          shoppingCart.removeItemFromCart(name);#}
+{#          displayCart();#}
+{#        })#}
+{#        // +1#}
+{#        $('.show-cart').on("click", ".plus-item", function(event) {#}
+{#          var name = $(this).data('name')#}
+{#          shoppingCart.addItemToCart(name);#}
+{#          displayCart();#}
+{#        })#}
+{##}
+{#        // Item count input#}
+{#        $('.show-cart').on("change", ".item-count", function(event) {#}
+{#           var name = $(this).data('name');#}
+{#           var count = Number($(this).val());#}
+{#          shoppingCart.setCountForItem(name, count);#}
+{#          displayCart();#}
+{#        });#}
+{##}
+{#        displayCart();#}
+{##}
+{#    </script>#}
+
+	</body>
+</html>
+
