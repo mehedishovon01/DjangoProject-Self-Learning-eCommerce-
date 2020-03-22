@@ -22,3 +22,12 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class Image(models.Model):
+    product_name = models.ForeignKey(Product, on_delete=models.CASCADE, null=True, blank=True)
+    image1 = models.ImageField(default='products/default.jpg', upload_to='products', null=True, blank=True)
+    image2 = models.ImageField(default='products/default.jpg', upload_to='products', null=True, blank=True)
+
+    def __str__(self):
+        return self.product_name.name

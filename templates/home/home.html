@@ -11,12 +11,9 @@
 			   			<div class="row">
 				   			<div class="col-md-6 col-md-offset-3 col-md-pull-2 col-sm-12 col-xs-12 slider-text">
 				   				<div class="slider-text-inner">
-				   					<div class="desc">
-					   					<h1 class="head-1">Men's</h1>
-					   					<h2 class="head-2">Jeans</h2>
-					   					<h2 class="head-3">Collection</h2>
-					   					<p class="category"><span>New stylish shirts, pants &amp; Accessories</span></p>
-					   					<p><a href="#" class="btn btn-primary">Shop Collection</a></p>
+				   					<div class="desc"><br><br>
+					   					<h1 class="head-1">&nbsp;&nbsp;Men's</h1>
+					   					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="btn btn-primary">Shop Collection</a></p>
 				   					</div>
 				   				</div>
 				   			</div>
@@ -29,12 +26,9 @@
 			   			<div class="row">
 				   			<div class="col-md-6 col-md-offset-3 col-md-pull-2 col-sm-12 col-xs-12 slider-text">
 				   				<div class="slider-text-inner">
-				   					<div class="desc">
-					   					<h1 class="head-1">Huge</h1>
-					   					<h2 class="head-2">Sale</h2>
-					   					<h2 class="head-3">45% off</h2>
-					   					<p class="category"><span>New stylish shirts, pants &amp; Accessories</span></p>
-					   					<p><a href="#" class="btn btn-primary">Shop Collection</a></p>
+				   					<div class="desc"><br><br>
+					   					<h1 class="head-1">Women</h1>
+					   					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="btn btn-primary">Shop Collection</a></p>
 				   					</div>
 				   				</div>
 				   			</div>
@@ -47,12 +41,10 @@
 			   			<div class="row">
 				   			<div class="col-md-6 col-md-offset-3 col-md-push-3 col-sm-12 col-xs-12 slider-text">
 				   				<div class="slider-text-inner">
-				   					<div class="desc">
-					   					<h1 class="head-1">New</h1>
-					   					<h2 class="head-2">Arrival</h2>
-					   					<h2 class="head-3">up to 30% off</h2>
-					   					<p class="category"><span>New stylish shirts, pants &amp; Accessories</span></p>
-					   					<p><a href="#" class="btn btn-primary">Shop Collection</a></p>
+				   					<div class="desc"><br><br><br>
+{#					   					<h1 class="head-1">&nbsp;&nbsp;&nbsp;</h1>#}
+					   					<h2 class="head-2">NewArrival</h2>
+					   					<p>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="btn btn-primary">Shop Collection</a></p>
 				   					</div>
 				   				</div>
 				   			</div>
@@ -69,9 +61,9 @@
                     {% if category.id == 1 %}
 					<div class="col-md-6">
                     <article class="article-entry">
-                        <a href="{% url 'category-wise-products' category.name %}" class="f-product-1" style="background-image: url({% static 'images/item-4.jpg' %});">
+                        <a href="{% url 'category-wise-products' category.name %}" class="f-product-1" style="background-image: url({% static 'images/item-4.jpg' %}); height: 525px;">
                             <div class="desc">
-                                <p class="meta"><span class="day">Women's</span><span class="month">Clothing</span></p>
+                                <p class="meta"><span class="day">Women's</span></p>
                             </div>
 						</a>
                         </article>
@@ -82,9 +74,9 @@
                         {% elif category.id == 2 %}
 							<div class="col-md-6">
                             <article class="article-entry">
-								<a href="{% url 'category-wise-products' category.name %}" class="f-product-2" style="background-image: url({% static 'images/item-1.jpg' %});">
+								<a href="{% url 'category-wise-products' category.name %}" class="f-product-2" style="background-image: url({% static 'images/shirt.png' %});">
 									<div class="desc">
-                                        <p class="meta"><span class="day">Men's</span><span class="month">Clothing</span></p>
+                                        <p class="meta"><span class="day">Men's</span><span class="month"></span></p>
 									</div>
 								</a>
                             </article>
@@ -92,9 +84,9 @@
                         {% elif category.id == 3 %}
 							<div class="col-md-6">
                             <article class="article-entry">
-								<a href="{% url 'category-wise-products' category.name %}" class="f-product-2" style="background-image: url({% static 'images/item-4.jpg' %});">
+								<a href="{% url 'category-wise-products' category.name %}" class="f-product-2" style="background-image: url({% static 'images/bag.png' %});">
 									<div class="desc">
-                                        <p class="meta"><span class="day">Ladies</span><span class="month">Bag</span></p>
+                                        <p class="meta"><span class="day">Bag</span></p>
 									</div>
 								</a>
                             </article>
@@ -103,9 +95,9 @@
 							<div class="col-md-6">
                             <br>
                             <article class="article-entry">
-								<a href="{% url 'category-wise-products' category.name %}" class="f-product-2" style="background-image: url({% static 'images/mobile.jpg' %});">
+								<a href="{% url 'category-wise-products' category.name %}" class="f-product-2" style="background-image: url({% static 'images/phone.png' %});">
 									<div class="desc">
-                                        <p class="meta"><span class="day">Gadgets</span><span class="month">Phone</span></p>
+                                        <p class="meta"><span class="h4">Phone</span></p>
 									</div>
 								</a>
                             </article>
@@ -114,9 +106,9 @@
 							<div class="col-md-6">
                             <br>
                             <article class="article-entry">
-								<a href="{% url 'category-wise-products' category.name %}" class="f-product-2" style="background-image: url({% static 'images/item-3.jpg' %});">
+								<a href="{% url 'category-wise-products' category.name %}" class="f-product-2" style="background-image: url({% static 'images/cover.jpg' %});">
 									<div class="desc">
-                                        <p class="meta"><span class="day">Korean</span><span class="month">Cosmetics</span></p>>
+                                        <p class="meta"><span class="h4">Cosmetics</span></p>>
 									</div>
 								</a>
                             </article>
@@ -135,7 +127,7 @@
 				<div class="row">
 					<div class="col-md-6">
 						<div class="intro-desc">
-							<div class="text-salebox">
+							<div class="text-salebox"><br>
 								<div class="text-lefts">
 									<div class="sale-box">
 										<div class="sale-box-top">
@@ -143,12 +135,12 @@
 											<span class="sup-1">%</span>
 											<span class="sup-2">Off</span>
 										</div>
-										<h2 class="text-sale">Sale</h2>
+										<h4 class="text-sale">Sale</h4>
 									</div>
 								</div>
-								<div class="text-rights">
+								<div class="text-rights"><br><br>
 									<h3 class="title">Just hurry up limited offer!</h3>
-									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+{#									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>#}
 									<p><a href="shop.html" class="btn btn-primary">Shop Now</a> <a href="#" class="btn btn-primary btn-outline">Read more</a></p>
 								</div>
 							</div>
