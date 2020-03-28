@@ -78,7 +78,7 @@ h1, h2, h3, h4, h5, h6, figure {
     margin: 0; } }
 
 .colorlib-nav .top-menu {
-  padding: 40px 30px; }
+  padding: 20px 20px; }
   @media screen and (max-width: 768px) {
     .colorlib-nav .top-menu {
       padding: 28px 1em; } }
@@ -330,7 +330,7 @@ h1, h2, h3, h4, h5, h6, figure {
             width: 310px;
             height: 310px;
             content: '';
-            background: #fff;
+            background: rgba(255, 255, 255, 0.5);
             z-index: -1;
             -webkit-border-radius: 50%;
             -moz-border-radius: 50%;
@@ -460,7 +460,7 @@ h1, h2, h3, h4, h5, h6, figure {
     width: 100px;
     height: 100px;
     content: '';
-    background: #fff;
+    /*background: #fff;*/
     z-index: -1;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -1679,7 +1679,7 @@ input[type="text"] {
   padding: 14px; }
 
 #colorlib-footer {
-  padding: 7em 0 0 0; }
+  padding: 4em 0 0 0; }
   #colorlib-footer .colorlib-footer-links {
     padding: 0;
     margin: 0; }
@@ -1708,7 +1708,7 @@ input[type="text"] {
     color: #000;
     letter-spacing: 1px; }
   #colorlib-footer .copy {
-    padding: 2em 0; }
+    padding: 1em 0; }
     #colorlib-footer .copy p {
       margin-bottom: 0; }
 

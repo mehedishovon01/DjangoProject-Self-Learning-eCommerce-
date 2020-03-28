@@ -5,70 +5,69 @@
         <aside id="colorlib-hero">
 			<div class="flexslider">
 				<ul class="slides">
-			   	<li style="background-image: url({% static 'images/img_bg_1.jpg' %});">
-			   		<div class="overlay"></div>
-			   		<div class="container-fluid">
-			   			<div class="row">
-				   			<div class="col-md-6 col-md-offset-3 col-md-pull-2 col-sm-12 col-xs-12 slider-text">
-				   				<div class="slider-text-inner">
-				   					<div class="desc"><br><br>
-					   					<h1 class="head-1">&nbsp;&nbsp;Men's</h1>
-					   					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="btn btn-primary">Shop Collection</a></p>
-				   					</div>
-				   				</div>
-				   			</div>
-				   		</div>
-			   		</div>
-			   	</li>
-			   	<li style="background-image: url({% static 'images/img_bg_2.jpg' %});">
-			   		<div class="overlay"></div>
-			   		<div class="container-fluid">
-			   			<div class="row">
-				   			<div class="col-md-6 col-md-offset-3 col-md-pull-2 col-sm-12 col-xs-12 slider-text">
-				   				<div class="slider-text-inner">
-				   					<div class="desc"><br><br>
-					   					<h1 class="head-1">Women</h1>
-					   					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="btn btn-primary">Shop Collection</a></p>
-				   					</div>
-				   				</div>
-				   			</div>
-				   		</div>
-			   		</div>
-			   	</li>
-			   	<li style="background-image: url({% static 'images/img_bg_3.jpg' %});">
-			   		<div class="overlay"></div>
-			   		<div class="container-fluid">
-			   			<div class="row">
-				   			<div class="col-md-6 col-md-offset-3 col-md-push-3 col-sm-12 col-xs-12 slider-text">
-				   				<div class="slider-text-inner">
-				   					<div class="desc"><br><br><br>
-{#					   					<h1 class="head-1">&nbsp;&nbsp;&nbsp;</h1>#}
-					   					<h2 class="head-2">NewArrival</h2>
-					   					<p>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="btn btn-primary">Shop Collection</a></p>
-				   					</div>
-				   				</div>
-				   			</div>
-				   		</div>
-			   		</div>
-			   	</li>
+                    <li style="background-image: url({% static 'images/img_bg_1.jpg' %});">
+                        <div class="overlay"></div>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6 col-md-offset-3 col-md-pull-2 col-sm-12 col-xs-12 slider-text">
+                                    <div class="slider-text-inner">
+                                        <div class="desc"><br><br>
+                                            <h1 class="head-1">&nbsp;&nbsp;Men's</h1>
+                                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="btn btn-primary">Shop Collection</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li style="background-image: url({% static 'images/img_bg_2.jpg' %});">
+                        <div class="overlay"></div>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6 col-md-offset-3 col-md-pull-2 col-sm-12 col-xs-12 slider-text">
+                                    <div class="slider-text-inner">
+                                        <div class="desc"><br><br>
+                                            <h1 class="head-1">Women</h1>
+                                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="btn btn-primary">Shop Collection</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li style="background-image: url({% static 'images/img_bg_3.jpg' %});">
+                        <div class="overlay"></div>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6 col-md-offset-3 col-md-push-3 col-sm-12 col-xs-12 slider-text">
+                                    <div class="slider-text-inner">
+                                        <div class="desc"><br><br><br>
+    {#					   					<h1 class="head-1">&nbsp;&nbsp;&nbsp;</h1>#}
+                                            <h2 class="head-2">NewArrival</h2>
+                                            <p>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="btn btn-primary">Shop Collection</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
 			  	</ul>
 		  	</div>
 		</aside>
-		<div id="colorlib-featured">
+		<div id="colorlib-featured-product">
 			<div class="container">
 				<div class="row">
                     {% for category in category_name %}
                     {% if category.id == 1 %}
 					<div class="col-md-6">
                     <article class="article-entry">
-                        <a href="{% url 'category-wise-products' category.name %}" class="f-product-1" style="background-image: url({% static 'images/item-4.jpg' %}); height: 525px;">
+                        <a href="{% url 'category-wise-products' category.name %}" class="f-product-1" style="background-image: url({% static 'images/item-4.jpg' %}); height: 570px;">
                             <div class="desc">
                                 <p class="meta"><span class="day">Women's</span></p>
                             </div>
 						</a>
                         </article>
-					</div>
-
+					</div><br>
 					<div class="col-md-6">
 						<div class="row">
                         {% elif category.id == 2 %}
@@ -80,7 +79,7 @@
 									</div>
 								</a>
                             </article>
-							</div>
+							</div><br>
                         {% elif category.id == 3 %}
 							<div class="col-md-6">
                             <article class="article-entry">
@@ -141,7 +140,7 @@
 								<div class="text-rights"><br><br>
 									<h3 class="title">Just hurry up limited offer!</h3>
 {#									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>#}
-									<p><a href="shop.html" class="btn btn-primary">Shop Now</a> <a href="#" class="btn btn-primary btn-outline">Read more</a></p>
+									<p><a href="#" class="btn btn-primary">Shop Now</a> <a href="#" class="btn btn-primary btn-outline">Read more</a></p>
 								</div>
 							</div>
 						</div>
