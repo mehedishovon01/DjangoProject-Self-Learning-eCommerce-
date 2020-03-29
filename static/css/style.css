@@ -1579,17 +1579,17 @@ input[type="text"] {
   margin: 0;
   padding: 0; }
   .colorlib-social-icons li {
-    margin: 0;
-    padding: 0;
+    margin: 10px;
+    padding-left: 108px;
     list-style: none;
     display: -moz-inline-stack;
-    display: inline-block;
-    zoom: 1;
+    /*display: inline-block;*/
+    zoom: 5;
     *display: inline; }
     .colorlib-social-icons li a {
       display: -moz-inline-stack;
       display: inline-block;
-      zoom: 1;
+      zoom: 2;
       *display: inline;
       color: #FFC300;
       padding-left: 10px;
@@ -1679,7 +1679,7 @@ input[type="text"] {
   padding: 14px; }
 
 #colorlib-footer {
-  padding: 4em 0 0 0; }
+  padding: 3em 0 0 0; }
   #colorlib-footer .colorlib-footer-links {
     padding: 0;
     margin: 0; }
@@ -1708,7 +1708,7 @@ input[type="text"] {
     color: #000;
     letter-spacing: 1px; }
   #colorlib-footer .copy {
-    padding: 1em 0; }
+    padding: 2em 0; }
     #colorlib-footer .copy p {
       margin-bottom: 0; }
 
@@ -2091,13 +2091,13 @@ input[type="text"] {
     border-color: #FFC300; }
 
 .row-pb-lg {
-  padding-bottom: 6em !important; }
+  padding-bottom: 2em !important; }
 
 .row-pb-md {
-  padding-bottom: 4em !important; }
+  padding-bottom: 0em !important; }
 
 .row-pb-sm {
-  padding-bottom: 2em !important; }
+  padding-bottom: 0em !important; }
 
 .nopadding {
   padding: 0 !important;
