@@ -1,6 +1,5 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib import messages
-# from CombinedElements.models import Category
 from .models import Product, Image
 from CombinedElements.models import Category
 from django.views.generic import (
@@ -18,12 +17,6 @@ class GetProductListView(ListView):
     context_object_name = 'products'
     ordering = ['-posted_date']
     paginate_by = 10
-
-    # Add Another Model For Passing Data
-    # def get_context_data(self, **kwargs):
-    #     context = super(GetProductListView, self).get_context_data(**kwargs)
-    #     context['categories'] = Category.objects.all()
-    #     return context
 
     # Add Another Model For Passing Data
     def get_context_data(self, **kwargs):
