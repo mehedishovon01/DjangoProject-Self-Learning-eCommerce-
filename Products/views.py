@@ -25,12 +25,23 @@ class GetProductListView(ListView):
         return context
 
 
-class GetProductDetailsView(DetailView):
+# class GetProductDetailsView(DetailView):
+#     model = Product
+#     template_name = 'products/product-details.html'
+#
+#     # Add Another Model For Passing Data
+#     def get_context_data(self, **kwargs):
+#         context = super(GetProductDetailsView, self).get_context_data(**kwargs)
+#         context['multiple_image'] = Image.objects.all()
+#         return context
+
+
+class GetProductDetailsSlugView(DetailView):
     model = Product
     template_name = 'products/product-details.html'
 
     # Add Another Model For Passing Data
     def get_context_data(self, **kwargs):
-        context = super(GetProductDetailsView, self).get_context_data(**kwargs)
+        context = super(GetProductDetailsSlugView, self).get_context_data(**kwargs)
         context['multiple_image'] = Image.objects.all()
         return context

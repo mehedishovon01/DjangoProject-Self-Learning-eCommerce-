@@ -9,6 +9,7 @@ from CombinedElements.models import (
 
 class Product(models.Model):
     name = models.CharField(max_length=100)
+    slug = models.SlugField(default='zebraa-products')
     price = models.DecimalField(max_digits=20, decimal_places=2)
     color = models.ForeignKey(Color, on_delete=models.CASCADE)
     size = models.IntegerField()
