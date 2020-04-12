@@ -87,8 +87,17 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <p><a href="#" class="btn btn-primary btn-addtocart add-to-cart btn btn-primary">
-                                        <i class="icon-shopping-cart"></i> Add to Cart</a></p>
+                                <form method="POST" action="{% url 'carts_update' %}">
+                                    {% csrf_token %}
+                                <input type="hidden" name="product_id" value="{{ product.id }}">
+                                    {% if object in cart.products.all %}
+                                        <p><button type="submit" class="btn btn-danger btn-addtocart add-to-cart btn btn-danger">
+                                            <i class="icon-shopping-cart"> Remove from Cart</i></button></p>
+                                        {% else %}
+                                        <p><button type="submit" class="btn btn-primary btn-addtocart add-to-cart btn btn-primary">
+                                            <i class="icon-shopping-cart"> Add to Cart</i></button></p>
+                                    {% endif %}
+                                </form>
                                 </div>
                             </div>
                         </div>

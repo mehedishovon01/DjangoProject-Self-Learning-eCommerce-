@@ -2,28 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb95bd5f-71fb-4668-a38b-536ca04ea5eb" name="Default Changelist" comment="Before Login System Creating">
-      <change afterPath="$PROJECT_DIR$/Carts/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Users/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Users/signals.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Users/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/auth/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/auth/logout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/auth/profile.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/auth/registration.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/carts/carts.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Carts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Carts/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Carts/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Carts/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Carts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Carts/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewZebraa/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewZebraa/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewZebraa/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewZebraa/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Products/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Products/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Products/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Products/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Products/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Products/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Users/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Users/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/category/category-wise-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/category/category-wise-list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/layouts/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layouts/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/products/product-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/products/product-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/carts/carts.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/carts/carts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/products/product-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/products/product-details.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +67,9 @@
       </path>
     </expand>
     <select />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -190,7 +179,8 @@
       <workItem from="1586366798382" duration="7288000" />
       <workItem from="1586355595641" duration="177000" />
       <workItem from="1586407918211" duration="6760000" />
-      <workItem from="1586578083064" duration="13727000" />
+      <workItem from="1586578083064" duration="23465000" />
+      <workItem from="1586659099949" duration="22331000" />
     </task>
     <servers />
   </component>
@@ -214,22 +204,22 @@
       <screen x="0" y="0" width="1366" height="741" />
     </state>
     <state x="284" y="0" width="788" height="736" key="CommitChangelistDialog2/0.0.1366.741@0.0.1366.741" timestamp="1586579906143" />
-    <state width="1324" height="307" key="GridCell.Tab.0.bottom" timestamp="1586599520409">
+    <state width="1324" height="307" key="GridCell.Tab.0.bottom" timestamp="1586688544397">
       <screen x="0" y="0" width="1366" height="741" />
     </state>
-    <state width="1324" height="307" key="GridCell.Tab.0.bottom/0.0.1366.741@0.0.1366.741" timestamp="1586599520409" />
-    <state width="1324" height="307" key="GridCell.Tab.0.center" timestamp="1586599520406">
+    <state width="1324" height="307" key="GridCell.Tab.0.bottom/0.0.1366.741@0.0.1366.741" timestamp="1586688544397" />
+    <state width="1324" height="307" key="GridCell.Tab.0.center" timestamp="1586688544397">
       <screen x="0" y="0" width="1366" height="741" />
     </state>
-    <state width="1324" height="307" key="GridCell.Tab.0.center/0.0.1366.741@0.0.1366.741" timestamp="1586599520406" />
-    <state width="1324" height="307" key="GridCell.Tab.0.left" timestamp="1586599520405">
+    <state width="1324" height="307" key="GridCell.Tab.0.center/0.0.1366.741@0.0.1366.741" timestamp="1586688544397" />
+    <state width="1324" height="307" key="GridCell.Tab.0.left" timestamp="1586688544396">
       <screen x="0" y="0" width="1366" height="741" />
     </state>
-    <state width="1324" height="307" key="GridCell.Tab.0.left/0.0.1366.741@0.0.1366.741" timestamp="1586599520405" />
-    <state width="1324" height="307" key="GridCell.Tab.0.right" timestamp="1586599520408">
+    <state width="1324" height="307" key="GridCell.Tab.0.left/0.0.1366.741@0.0.1366.741" timestamp="1586688544396" />
+    <state width="1324" height="307" key="GridCell.Tab.0.right" timestamp="1586688544397">
       <screen x="0" y="0" width="1366" height="741" />
     </state>
-    <state width="1324" height="307" key="GridCell.Tab.0.right/0.0.1366.741@0.0.1366.741" timestamp="1586599520408" />
+    <state width="1324" height="307" key="GridCell.Tab.0.right/0.0.1366.741@0.0.1366.741" timestamp="1586688544397" />
     <state width="1314" height="220" key="GridCell.Tab.1.bottom" timestamp="1584719708496">
       <screen x="0" y="0" width="1366" height="741" />
     </state>
@@ -250,10 +240,10 @@
       <screen x="0" y="0" width="1366" height="741" />
     </state>
     <state x="456" y="84" width="443" height="566" key="RollbackChangesDialog/0.0.1366.741@0.0.1366.741" timestamp="1586350965717" />
-    <state x="346" y="62" width="672" height="678" key="search.everywhere.popup" timestamp="1584366688937">
+    <state x="346" y="62" width="672" height="678" key="search.everywhere.popup" timestamp="1586685958344">
       <screen x="0" y="0" width="1366" height="741" />
     </state>
-    <state x="346" y="62" width="672" height="678" key="search.everywhere.popup/0.0.1366.741@0.0.1366.741" timestamp="1584366688937" />
+    <state x="346" y="62" width="672" height="678" key="search.everywhere.popup/0.0.1366.741@0.0.1366.741" timestamp="1586685958344" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

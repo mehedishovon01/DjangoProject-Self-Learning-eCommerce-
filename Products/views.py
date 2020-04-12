@@ -2,6 +2,7 @@
 # from django.contrib import messages
 from .models import Product, Image
 from CombinedElements.models import Category
+from Carts.models import Cart
 from django.views.generic import (
     ListView,
     DetailView,
@@ -44,4 +45,6 @@ class GetProductDetailsSlugView(DetailView):
     def get_context_data(self, **kwargs):
         context = super(GetProductDetailsSlugView, self).get_context_data(**kwargs)
         context['multiple_image'] = Image.objects.all()
+        cart_obj, new_obj = Cart.objects.new_or_get(self.request)
+        context['cart'] = cart_obj
         return context
