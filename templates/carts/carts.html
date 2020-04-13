@@ -88,7 +88,16 @@
 							</div>
 							<div class="one-eight text-center">
 								<div class="display-tc">
-									<a href="#" class="closed"></a>
+{#									<a href="#" class="closed"></a>#}
+                                    <form method="POST" action="{% url 'carts_update' %}">
+                                    {% csrf_token %}
+                                    <input type="hidden" name="product_id" value="{{ product.id }}">
+                                        {% if object in cart.products.all %}
+                                            <button type="submit" class="closed btn-outline"></button>
+                                        {% else %}
+                                            <button type="submit" class="btn"><i class="closed" style="background: buttonface;"></i></button>
+                                        {% endif %}
+                                    </form>
 								</div>
 							</div>
 						</div>

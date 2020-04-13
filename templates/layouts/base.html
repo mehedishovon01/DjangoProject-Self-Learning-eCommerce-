@@ -89,8 +89,8 @@
 								</li>
 								<li><a href="{% url 'about' %}">About</a></li>
 								<li><a href="{% url 'contact-us' %}">Contact</a></li>
-                                <li><a href="#" data-target="#cart"><i class="icon-shopping-cart"></i>
-                                    Cart [<span class="total-count"></span>]</a></li>
+                                <li><a href="{% url 'carts' %}" data-target="#cart"><i class="icon-shopping-cart"></i>
+                                    Cart [{{ request.session.cart_items }}]</a></li>
 							</ul>
 						</div>
 					</div>
@@ -174,11 +174,11 @@
 					</div>
                     <div class="col-md-1">
 {#                        <h4>Social Media</h4>#}
-                        <ul class="colorlib-social-icons">
-                            <li><a href="#"><i class="icon-twitter"></i></a></li>
-                            <li><a href="https://www.facebook.com/zebraalife/"><i class="icon-facebook"></i></a></li>
-                            <li><a href="#"><i class="icon-linkedin"></i></a></li>
-                            <li><a href="#"><i class="icon-dribbble"></i></a></li>
+                        <ul class="colorlib-footer-links" style="margin-top: 20px; padding-left: 120px;">
+                            <li><a href="#"><i class="icon-twitter" style="color: #FFC300;"></i></a></li>
+                            <li><a href="https://www.facebook.com/zebraalife/" style="color: #FFC300;"><i class="icon-facebook"></i></a></li>
+                            <li><a href="#"><i class="icon-linkedin" style="color: #FFC300;"></i></a></li>
+                            <li><a href="#"><i class="icon-dribbble" style="color: #FFC300;"></i></a></li>
 						</ul>
 					</div>
 				</div>
